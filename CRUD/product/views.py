@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from requests import delete
 from rest_framework import generics, mixins
 
 from .models import Product
@@ -24,7 +25,11 @@ class ProductMixin(
         return self.list(request, *args, **kwargs)
     
     def post(self, request, *args, **kwargs):
-        pk = kwargs.get('pk')
-        if pk is not None:
-            return self.update(request, *args, **kwargs)
         return self.create(request, *args, **kwargs)
+    
+    def put(self, request, *args, **kwargs):
+        return self.update(request, *args, **kwargs)
+    
+    def delete(self, request, *args, **kwargs):
+        return self.destroy(request, *args, **kwargs)
+            
