@@ -12,12 +12,5 @@ CRUD with Django rest-framework
    ```
 ## Roadmap
 
-<<<<<<< HEAD
-- [ ] Add users login and logout
-=======
 - [ ] Add users login and logout
 
-
-
-
->>>>>>> 53fbd482e9774887c9efcdc6cfd2deb53cf90788
