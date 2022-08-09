@@ -42,7 +42,10 @@ INSTALLED_APPS = [
 
     #intrenal app
     'product',
+    'users',
 ]
+
+AUTH_USER_MODEL = 'users.MyUser'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
